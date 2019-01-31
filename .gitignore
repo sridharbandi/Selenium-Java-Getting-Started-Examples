@@ -1,0 +1,12 @@
+/.gradle/
+/build/
+/target/
+/.idea/
+/Selenium-Junit-Template/.gradle/
+/Selenium-Testng-Template/.gradle/
+/Selenium-Cucumber-Junit-Template/.gradle/
+/Selenium-Cucumber-Testng-Template/.gradle/
+/Selenium-Cucumber-Testng-Template/out/
+/Selenium-Cucumber-Testng-Template/target/
+/Selenium-Junit-Template/target/
+/Selenium-Cucumber-Junit-Template/target/
