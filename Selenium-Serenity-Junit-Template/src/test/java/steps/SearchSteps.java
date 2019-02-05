@@ -24,7 +24,7 @@ public class SearchSteps extends ScenarioSteps {
     }
 
     @Step
-    public void assertSeleniumLinkPresent(){
-        searchResultsPage.assertSeleniumPresent();
+    public boolean seleniumLinkPresent(){
+        return searchResultsPage.seleniumResultPresent();
     }
 }
