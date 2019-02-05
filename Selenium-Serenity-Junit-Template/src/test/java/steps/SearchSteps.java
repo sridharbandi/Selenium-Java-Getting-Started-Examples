@@ -5,6 +5,9 @@ import net.thucydides.core.steps.ScenarioSteps;
 import pageobjects.GoogleSearchPage;
 import pageobjects.SearchResultsPage;
 
+/**
+ * Created by Sridhar Bandi on 05/02/19.
+ */
 public class SearchSteps extends ScenarioSteps {
 
     GoogleSearchPage googleSearchPage;

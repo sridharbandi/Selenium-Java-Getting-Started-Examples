@@ -7,12 +7,15 @@ import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
+/**
+ * Created by Sridhar Bandi on 05/02/19.
+ */
 @DefaultUrl("https://www.google.com/")
 public class GoogleSearchPage extends PageObject {
 
     private WebDriver _driver = null;
 
-    @FindBy(id = "lst-ib")
+    @FindBy(name = "q")
     WebElementFacade searchbox;
 
     public void searchFor(String _searchTerm) {

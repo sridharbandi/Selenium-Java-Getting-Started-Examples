@@ -8,6 +8,9 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import steps.SearchSteps;
 
+/**
+ * Created by Sridhar Bandi on 05/02/19.
+ */
 @RunWith(SerenityRunner.class)
 public class RunTest {
 
