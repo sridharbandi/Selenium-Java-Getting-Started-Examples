@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+}
+
+group 'com.tech.selenium'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+ext {
+    seleniumVersion = '3.141.59'
+    webdrivermanagerVersion = '3.2.0'
+    jbehaveVersion = '4.3.5'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.seleniumhq.selenium:selenium-java:${seleniumVersion}"
+    compile "io.github.bonigarcia:webdrivermanager:${webdrivermanagerVersion}"
+    compile "org.jbehave:jbehave-core:${jbehaveVersion}"
+}
+
+test {
+    systemProperties System.properties
+    dependsOn 'cleanTest'
+}
+
+gradle.startParameter.continueOnFailure = true
