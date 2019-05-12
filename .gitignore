@@ -10,3 +10,12 @@
 /Selenium-Cucumber-Testng-Template/target/
 /Selenium-Junit-Template/target/
 /Selenium-Cucumber-Junit-Template/target/
+/Selenium-Serenity-Junit-Template/.gradle/
+/Selenium-Serenity-Junit-Template/history/
+/Selenium-Serenity-Junit-Template/target/
+/Selenium-Serenity-Junit-Template/build/
+/Selenium-Jbehave-Junit-Template/.gradle/
+/Selenium-Jbehave-Junit-Template/history/
+/Selenium-Jbehave-Junit-Template/target/
+/Selenium-Jbehave-Junit-Template/build/
+/Selenium-Jbehave-Junit-Template/out/
