@@ -19,29 +19,31 @@ public class GoogleSteps extends Steps {
     SearchResultsPage searchResultsPage;
 
     @BeforeScenario
-    public void setUp(){
+    public void setUp() {
         driver = DriverFactory.getBrowser();
         googleSearchPage = new GoogleSearchPage(driver);
         searchResultsPage = new SearchResultsPage(driver);
     }
 
     @Given("User is on Google search page")
-    public void userOnGooglePage(){
+    public void userOnGooglePage() {
         googleSearchPage.openURL();
-    };
+    }
+
+    ;
 
     @When("User searches for Selenium")
-    public void userSearches(){
+    public void userSearches() {
         googleSearchPage.searchFor("Selenium");
     }
 
     @Then("User can see Selenium results")
-    public void userSeesResults(){
+    public void userSeesResults() {
         Assert.assertTrue(searchResultsPage._lnkSelenium.isDisplayed());
     }
 
     @AfterScenario
-    public void tearDown(){
+    public void tearDown() {
         driver.quit();
     }
 
