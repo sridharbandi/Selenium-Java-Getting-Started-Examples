@@ -16,8 +16,14 @@
         <selenium.version>3.141.59</selenium.version>
         <jbehave.version>4.3.5</jbehave.version>
         <webdrivermanager.version>3.2.0</webdrivermanager.version>
+        <failsafe.version>3.0.0-M3</failsafe.version>
     </properties>
-    
+    <developers>
+        <developer>
+            <name>Sridhar Bandi</name>
+            <email>sridhar.bandi.ece@gmail.com</email>
+        </developer>
+    </developers>
     <dependencies>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -40,7 +46,7 @@
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-failsafe-plugin</artifactId>
-            <version>3.0.0-M3</version>
+            <version>${failsafe.version}</version>
             <executions>
                 <execution>
                     <id>integration-test</id>
