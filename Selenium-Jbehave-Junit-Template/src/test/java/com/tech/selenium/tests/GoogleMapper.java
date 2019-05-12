@@ -6,17 +6,12 @@ import org.jbehave.core.embedder.Embedder;
 import org.jbehave.core.failures.FailureStrategy;
 import org.jbehave.core.io.CodeLocations;
 import org.jbehave.core.io.LoadFromClasspath;
-import org.jbehave.core.io.LoadFromURL;
-import org.jbehave.core.io.StoryFinder;
 import org.jbehave.core.junit.JUnitStories;
 import org.jbehave.core.configuration.Configuration;
 import org.jbehave.core.reporters.Format;
 import org.jbehave.core.reporters.StoryReporterBuilder;
 import org.jbehave.core.steps.InjectableStepsFactory;
 import org.jbehave.core.steps.InstanceStepsFactory;
-
-import static org.jbehave.core.io.CodeLocations.codeLocationFromClass;
-import static java.util.Arrays.asList;
 
 import java.util.Arrays;
 import java.util.List;
