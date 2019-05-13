@@ -12,6 +12,7 @@ import org.jbehave.core.reporters.Format;
 import org.jbehave.core.reporters.StoryReporterBuilder;
 import org.jbehave.core.steps.InjectableStepsFactory;
 import org.jbehave.core.steps.InstanceStepsFactory;
+import org.testng.annotations.Test;
 
 import java.util.Arrays;
 import java.util.List;
@@ -64,6 +65,11 @@ public class GoogleMapper extends JUnitStories {
     @Override
     public InjectableStepsFactory stepsFactory() {
         return new InstanceStepsFactory(configuration(), new GoogleSteps());
+    }
+
+    @Test
+    public void run() throws Throwable {
+        super.run();
     }
 
     protected List<String> storyPaths() {
