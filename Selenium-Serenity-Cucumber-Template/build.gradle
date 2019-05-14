@@ -1,0 +1,50 @@
+apply plugin: "java"
+apply plugin: "net.serenity-bdd.aggregator"
+
+group 'com.tech.selenium'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+ext {
+    serenity_version = "2.0.48"
+    serenity_cucumber_version = "1.9.37"
+    junit_version = "4.12"
+    webdrivermanager_version = '3.2.0'
+}
+
+buildscript {
+    ext {
+        serenity_version = "2.0.48"
+    }
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:${serenity_version}")
+    }
+}
+
+dependencies {
+    compile "net.serenity-bdd:serenity-core:${serenity_version}"
+    compile "net.serenity-bdd:serenity-cucumber:${serenity_cucumber_version}"
+    compile "io.github.bonigarcia:webdrivermanager:${webdrivermanager_version}"
+    testCompile "junit:junit:${junit_version}"
+}
+
+test {
+    testLogging {
+        showStandardStreams = true
+    }
+    /* Pass all system properties: */
+    systemProperties System.getProperties()
+    dependsOn 'cleanTest'
+}
+
+gradle.startParameter.continueOnFailure = true
