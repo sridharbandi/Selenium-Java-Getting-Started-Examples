@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+}
+
+group 'com.tech.selenium'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    selenideVersion = '5.2.3'
+    testngVersion = '7.0.0-beta3'
+}
+
+dependencies {
+    compile "com.codeborne:selenide:${selenideVersion}"
+    testCompile "org.testng:testng:${testngVersion}"
+}
+
+test {
+    useTestNG(){
+        useDefaultListeners = true
+        //To execute with testng xml uncomment below lin
+        //suites 'src/test/resources/testng.xml'
+    }
+    systemProperties System.properties
+    dependsOn 'cleanTest'
+}
+
+gradle.startParameter.continueOnFailure = true
