@@ -33,3 +33,7 @@
 /Selenium-Serenity-Jbehave-Template/out/
 /Selenium-Serenity-Jbehave-Template/history/
 /Selenium-Serenity-Jbehave-Template/target/
+/Selenium-Selenide-Junit-Template/.gradle/
+/Selenium-Selenide-Junit-Template/build/
+/Selenium-Selenide-Junit-Template/out/
+/Selenium-Selenide-Junit-Template/target/
