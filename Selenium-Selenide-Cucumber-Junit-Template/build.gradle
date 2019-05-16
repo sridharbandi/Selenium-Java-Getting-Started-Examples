@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+group 'com.tech.selenium'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    selenideVersion = '5.2.3'
+    cucumberversion = '4.2.2'
+}
+
+dependencies {
+    compile "com.codeborne:selenide:${selenideVersion}"
+    testCompile "io.cucumber:cucumber-java8:${cucumberversion}"
+    testCompile "io.cucumber:cucumber-junit:${cucumberversion}"
+}
+
+test {
+    systemProperties System.properties
+    dependsOn 'cleanTest'
+}
+
+gradle.startParameter.continueOnFailure = true
