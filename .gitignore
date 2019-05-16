@@ -37,3 +37,6 @@
 /Selenium-Selenide-Junit-Template/build/
 /Selenium-Selenide-Junit-Template/out/
 /Selenium-Selenide-Junit-Template/target/
+/Selenium-Selenide-Testng-Template/.gradle/
+/Selenium-Selenide-Testng-Template/build/
+/Selenium-Selenide-Testng-Template/target/
