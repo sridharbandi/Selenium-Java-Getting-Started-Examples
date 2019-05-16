@@ -6,11 +6,25 @@ group 'com.tech.selenium'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 repositories {
     mavenCentral()
 }
 
-dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+ext {
+    selenideVersion = '5.2.3'
+    junitVersion = '4.12'
 }
+
+dependencies {
+    compile "com.codeborne:selenide:${selenideVersion}"
+    testCompile "junit:junit:${junitVersion}"
+}
+
+test {
+    systemProperties System.properties
+    dependsOn 'cleanTest'
+}
+
+gradle.startParameter.continueOnFailure = true
