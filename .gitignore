@@ -50,3 +50,6 @@
 /Selenium-Selenide-Jbehave-Junit-Template/.gradle/
 /Selenium-Selenide-Jbehave-Junit-Template/build/
 /Selenium-Selenide-Jbehave-Junit-Template/target/
+/Selenium-Selenide-Jbehave-Testng-Template/.gradle/
+/Selenium-Selenide-Jbehave-Testng-Template/build/
+/Selenium-Selenide-Jbehave-Testng-Template/target/
