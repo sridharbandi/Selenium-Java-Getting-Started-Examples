@@ -43,3 +43,7 @@
 /Selenium-Selenide-Cucumber-Junit-Template/.gradle/
 /Selenium-Selenide-Cucumber-Junit-Template/build/
 /Selenium-Selenide-Cucumber-Junit-Template/target/
+/Selenium-Selenide-Cucumber-Testng-Template/.gradle/
+/Selenium-Selenide-Cucumber-Testng-Template/target/
+/Selenium-Selenide-Cucumber-Testng-Template/out/
+/Selenium-Selenide-Cucumber-Testng-Template/build/
