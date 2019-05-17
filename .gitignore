@@ -47,3 +47,6 @@
 /Selenium-Selenide-Cucumber-Testng-Template/target/
 /Selenium-Selenide-Cucumber-Testng-Template/out/
 /Selenium-Selenide-Cucumber-Testng-Template/build/
+/Selenium-Selenide-Jbehave-Junit-Template/.gradle/
+/Selenium-Selenide-Jbehave-Junit-Template/build/
+/Selenium-Selenide-Jbehave-Junit-Template/target/
