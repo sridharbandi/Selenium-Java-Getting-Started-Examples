@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+}
+
+group 'com.tech.selenium'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    selenideVersion = '5.2.3'
+    jbehaveVersion = '4.3.5'
+    testngversion = '6.14.3'
+}
+
+dependencies {
+    compile "com.codeborne:selenide:${selenideVersion}"
+    compile "org.jbehave:jbehave-core:${jbehaveVersion}"
+    testCompile "org.testng:testng:${testngversion}"
+}
+
+test {
+    systemProperties System.properties
+    dependsOn 'cleanTest'
+}
+
+gradle.startParameter.continueOnFailure = true
