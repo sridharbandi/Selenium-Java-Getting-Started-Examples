@@ -10,7 +10,6 @@ import org.jbehave.core.annotations.When;
 import org.jbehave.core.steps.Steps;
 import org.junit.Assert;
 
-
 /**
  * Created by Sridhar Bandi on 17/05/19.
  */
