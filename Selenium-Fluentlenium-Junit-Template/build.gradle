@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+}
+
+group 'com.tech.selenium'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    fluentleniumVersion = '3.8.1'
+    webdrivermanagerVersion = '3.2.0'
+    seleniumVersion = '3.141.59'
+}
+
+dependencies {
+    compile "io.github.bonigarcia:webdrivermanager:${webdrivermanagerVersion}"
+    compile "org.fluentlenium:fluentlenium-junit:${fluentleniumVersion}"
+    compile "org.seleniumhq.selenium:selenium-chrome-driver:${seleniumVersion}"
+    compile "org.seleniumhq.selenium:selenium-firefox-driver:${seleniumVersion}"
+    compile "org.seleniumhq.selenium:selenium-ie-driver:${seleniumVersion}"
+    compile "org.seleniumhq.selenium:selenium-edge-driver:${seleniumVersion}"
+    compile "org.seleniumhq.selenium:selenium-opera-driver:${seleniumVersion}"
+}
+
+test {
+    systemProperties System.properties
+    dependsOn 'cleanTest'
+}
+
+gradle.startParameter.continueOnFailure = true
