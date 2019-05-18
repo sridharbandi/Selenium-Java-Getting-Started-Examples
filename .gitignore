@@ -53,3 +53,13 @@
 /Selenium-Selenide-Jbehave-Testng-Template/.gradle/
 /Selenium-Selenide-Jbehave-Testng-Template/build/
 /Selenium-Selenide-Jbehave-Testng-Template/target/
+/Selenium-Fluentlenium-Junit-Template/.gradle/
+/Selenium-Fluentlenium-Junit-Template/target/
+/Selenium-Fluentlenium-Testng-Template/.gradle/
+/Selenium-Fluentlenium-Testng-Template/out/
+/Selenium-Fluentlenium-Testng-Template/build/
+/Selenium-Fluentlenium-Testng-Template/target/
+/Selenium-Fluentlenium-Cucumber-Template/out/
+/Selenium-Fluentlenium-Cucumber-Template/build/
+/Selenium-Fluentlenium-Cucumber-Template/.gradle/
+/Selenium-Fluentlenium-Cucumber-Template/target/
