@@ -21,5 +21,5 @@
  17. [Selenium FluentLenium TestNG Template](https://github.com/sridharbandi/Selenium-Java-Getting-Started-Examples/tree/master/Selenium-Fluentlenium-Testng-Template)
  18. [Selenium FluentLenium Cucumber Template](https://github.com/sridharbandi/Selenium-Java-Getting-Started-Examples/tree/master/Selenium-Fluentlenium-Cucumber-Template)
  
- > If you looking for template which is not in above list, drop me [mail](mailto:sridhar.bandi.ece@gmail.com). I can create it for you.
+ > If you looking for a template which is not in the above list, drop me a [mail](mailto:sridhar.bandi.ece@gmail.com). I can create it for you.
  
