@@ -12,7 +12,7 @@ public class SearchResultsPage {
 
     private WebDriver _driver = null;
 
-    @FindBy(partialLinkText = "Selenium - Web Browser Automation")
+    @FindBy(partialLinkText = "Selenium")
     public WebElement _lnkSelenium;
 
     public SearchResultsPage(WebDriver driver) {
