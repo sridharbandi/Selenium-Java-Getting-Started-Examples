@@ -1,7 +1,7 @@
 package com.tech.selenium.tests;
 
-import cucumber.api.CucumberOptions;
-import cucumber.api.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
 
 /**
  * Created by Sridhar Bandi on 29/01/19.
