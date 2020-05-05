@@ -3,8 +3,8 @@ package com.tech.selenium.stepdefinitions;
 import com.tech.selenium.driverutil.DriverFactory;
 import com.tech.selenium.pageobjects.GoogleSearchPage;
 import com.tech.selenium.pageobjects.SearchResultsPage;
-import cucumber.api.Scenario;
-import cucumber.api.java8.En;
+import io.cucumber.java8.En;
+import io.cucumber.java8.Scenario;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
