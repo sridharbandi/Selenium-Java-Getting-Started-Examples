@@ -13,8 +13,8 @@ repositories {
 }
 
 ext {
-    fluentleniumVersion = '3.8.1'
-    webdrivermanagerVersion = '3.2.0'
+    fluentleniumVersion = '4.3.1'
+    webdrivermanagerVersion = '3.8.1'
     seleniumVersion = '3.141.59'
 }
 
