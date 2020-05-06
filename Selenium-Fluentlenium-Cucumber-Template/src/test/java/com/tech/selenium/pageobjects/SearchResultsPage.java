@@ -9,7 +9,7 @@ import org.openqa.selenium.support.FindBy;
  */
 public class SearchResultsPage extends FluentPage {
 
-    @FindBy(partialLinkText = "Selenium - Web Browser Automation")
+    @FindBy(partialLinkText = "Selenium")
     private FluentWebElement lnkSelenium;
 
     public FluentWebElement getLnkSelenium(){
